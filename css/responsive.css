@@ -1,0 +1,352 @@
+
+/*ARTHUR ISNARD --------------------------------------------------*/
+@media(max-width: 1600px){
+	header h1{
+		font-size: 20px;
+	}
+
+}
+
+@media(max-width: 1400px){
+	header h1{
+		font-size: 15px;
+	}
+
+	footer{
+		align-items: flex-end;
+	}
+
+}
+
+@media(max-width: 1200px){
+	header h1{
+		font-size: 10px;
+	}
+
+}
+
+@media(max-width: 1000px){
+	footer a{
+		font-size: 8px;
+	}
+
+	.sectionLeft, .sectionRight{
+		width: 500px;
+		height: 175px;
+	}
+
+	.sectionBig{
+		width: 500px;
+		height: 200px;
+	}
+
+	.sectionBig h2{
+		font-size: 20px;
+	}
+
+	.sectionBig h3{
+		font-size: 12px;
+	}
+
+	.contact{
+		width: 70%;
+	}
+
+	.cardText{
+		height: 80%;
+		align-self: center;
+	}
+
+	#mentionCard h2{
+		margin-bottom: 0px;
+	}
+
+	.mentionText{
+		max-height: 150px;
+		width: 33%;
+	}
+
+	p,a,li{
+		line-height: 16px;
+	}
+
+}
+
+@media(max-width: 900px){
+	header h1{
+		font-size: 7px;
+	}
+
+}
+
+/*Version mobile ----------------------------------------------*/
+
+  
+header label{  
+	font-size: 40px;
+	display: none;
+	margin-top: -5px;
+	z-index: 3;
+	color: #F6F5F5;
+
+}
+
+header input{
+	display: none;
+}
+
+nav{
+	display: none;
+}
+
+
+@media(max-width: 800px){  
+	#webH1{
+		display: none;
+	}
+
+	.helmetTop{
+		display: none;
+	}
+
+	.phoneHelmetTop{
+		display: block;
+	}
+
+	.helmetBot{
+		display: none;
+	}
+
+	.phoneHelmetBot{
+		display: block;
+	}
+
+	footer a{
+		display: none;
+	}
+
+	/*Menu burger ---------------------------*/
+	header{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	header label{
+		display: block;
+	}
+
+	#switch:checked + nav{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav{
+		width: 100%;
+	}	
+
+	nav a{
+		margin-top:-2px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		
+	}
+
+
+	.firstBurger{
+		margin-top: -32px;
+		height: 35vh;
+		background: rgb(2,0,36);
+		background: linear-gradient(0deg, rgba(2,0,36,1) 66%, rgba(5,4,69,0.66) 83%, rgba(6,5,79,0.33) 93%, rgba(7,6,91,0) 100%);
+	}
+
+	.lastBurger{
+		height: 65vh;
+		background: rgb(2,0,36);
+		background: linear-gradient(180deg, rgba(2,0,36,1) 66%, rgba(5,4,69,0.66) 83%, rgba(6,5,79,0.33) 93%, rgba(7,6,91,0) 100%);
+		justify-content: flex-start;
+	}
+
+	.menuBtn{
+		width: 50%;
+		background-color: #F6F5F5;
+		border-radius: 50px;
+		box-shadow: 0px 5px 15px 0px rgba(0,0,0,1);
+	}
+
+	.photoBtn{
+		height: 250px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.photoBtn img{
+		transform: translateY(0px);
+		animation: floatNoShadow 8s ease-in-out infinite;
+	}
+
+	@keyframes floatNoShadow{
+	0%{
+		transform: translateY(0px);
+	}
+
+	50%{
+		transform: translateY(-15px);
+	}
+
+	100%{
+		transform: translateY(0px);
+	}
+	}
+
+
+
+	nav h2{
+		margin: 20px;
+		text-align: center;
+	}
+
+	header h1{
+		margin: 30px;
+		font-size: 22px;
+	}
+
+/*Page d'accueil ----------------------------------------*/
+
+	.card{
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+	}
+
+	.cardImg{
+		height: 50%;
+		width: 100%;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 45px;
+	}
+
+	.cardImg img{
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 45px;
+	}
+
+	.cardText{
+		width: 100%;
+		height: 50%;
+	}
+
+	.projectBtn{
+		height: 100%;
+		width: 50%;
+		min-width: 160px;
+	}
+
+	.sectionLeft{
+		height: 50%;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.sectionRight{
+		height: 50%;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.sectionMid{
+		width: 80%;
+		height: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+/*Page Projet ----------------------------------------*/
+
+	.sectionBig{
+		height: 70%;
+		width: 90%;
+	}
+
+	.sectionBig .cardText{
+		height: 65%;
+	}
+
+	.bigCard{
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+	}
+
+	.cardImgLeft{
+		height: 50%;
+		width: 100%;
+		border-top-right-radius: 45px;
+		border-bottom-left-radius: 0px;
+	}
+
+	.cardImgLeft img{
+		height: 100%;
+		width: 100%;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+		border-bottom-left-radius: 0px;
+		object-fit: cover;
+	}
+
+/*Page Contact ----------------------------------------------*/
+	header h1{
+		text-align: center;
+		line-height: 1em;
+	}
+
+	.photo{
+		width: auto;
+		height: auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	.photo img{
+		width: 70%;
+	}
+
+	.cardBtns{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-evenly;
+			width: 80%; 
+		}
+
+	.cardBtns .btns{
+		width: 100%;
+		text-align: center;
+		background-color: #070d59;
+		color: #F6F5F5;
+		margin-bottom: 5px;
+	}
+
+	.mentionBloc{
+		flex-direction: column;
+		overflow: auto;
+	}
+
+	.mentionBloc .cardText {
+		overflow: visible;
+	}
+
+	#mentionCard h2{
+		margin-left: 20px;
+	}
+
+
+}
